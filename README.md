@@ -1,5 +1,8 @@
 # Python
-Python Than Marathon
+#Python Than Marathon
+
 cd mystuff
+
 python test.py
+
 print 'Hello World'
