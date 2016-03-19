@@ -2,7 +2,7 @@ from sys import argv
 script, filename = argv
 print "I will destory this file,just like destory you."
 print "hit ENTER to destroy %s" % filename
-raw_input(shall we?)
+raw_input("shall we?")
 target = open(filename, 'w')
 target.truncate()
 print "we done here"
@@ -23,5 +23,5 @@ target.write("\n")
 
 target.close
 
-txt = open(filename)
-print txt.read()
+target = open(filename)
+print target.read()
