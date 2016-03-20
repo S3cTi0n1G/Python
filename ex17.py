@@ -1,15 +1,19 @@
 from sys import argv
 from os.path import exists
-script, from_file, to_file = argv
-in_file = open(from_file)
-indate = in_file.read()
+script, ff, tf = argv
+in_date = open(ff)
+to = in_date.read()
 
-out_file = open(to_file)
-out_file.write(indate)
+print len(to)
 
-out_file = open(to_file)
-print out_file.read()
+print "Does tf exists? %s " % exists(tf)
 
-out_file.close
-in_file.close
+out_date = open(tf, 'w')
+out_date.write(to)
+print "done"
 
+out_date = open(tf)
+print out_date.read()
+
+out_date.close
+in_date.close
