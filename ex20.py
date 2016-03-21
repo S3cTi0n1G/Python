@@ -18,8 +18,8 @@ print_all(current_file)
 rewind(current_file)
 
 current_line = 1
-print_line = (current_line,current_file)
+print_line(current_line,current_file)
 current_line += 1
-print_line = (current_line, current_file)
+print_line(current_line, current_file)
 current_line += 1
-print_line = (current_line, current_file )
+print_line(current_line, current_file )
